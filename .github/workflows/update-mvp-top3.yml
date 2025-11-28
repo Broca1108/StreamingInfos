@@ -1,0 +1,39 @@
+name: Update MVP top 3 dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 2 * * *'
+
+permissions:
+  contents: write  # notwendig, um direkt pushen zu dürfen
+
+jobs:
+  build-mvp-top3:
+    name: Refresh MVP top 3 dataset
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧩 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🛠 Generate MVP top 3 dataset
+        run: python scripts/update_mvp_top3.py
+
+      - name: 🚀 Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/mvp_top3.json
+          git commit -m "chore: update MVP top 3 dataset" || echo "No changes to commit"
+          git push origin main

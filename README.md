@@ -1,4 +1,4 @@
-# USC Streaminginfos
+# Skurios Streaminginfos
 
 Dieses Repository erzeugt täglich eine schlanke HTML-Seite zum Frauen-Bundesligateam des USC Münster und stellt zusätzliche Datensichten für Streams oder Social-Media-Betreuung bereit. Alle Informationen werden aus frei zugänglichen Quellen geladen – der Spielplan kommt aus dem öffentlichen CSV-Export der Volleyball Bundesliga, News werden von den Vereinsseiten sowie den VBL-Portalen geholt und internationale Partien direkt von der CEV aggregiert.
 
@@ -9,13 +9,13 @@ Dieses Repository erzeugt täglich eine schlanke HTML-Seite zum Frauen-Bundeslig
 Der Kern des Projekts ist der automatisch erzeugte Spieltagsbericht. Er liefert alle relevanten Informationen zum nächsten USC-Heimspiel in einem responsiven Layout (inklusive App-optimierter Variante mit skalierter Schrift). Enthalten sind unter anderem:
 
 * Überschrift mit dem nächsten Heimgegner des USC Münster inklusive Datum, Uhrzeit und Austragungsort.
-* Verlinkungen auf die offiziellen Vereinsseiten, die Tabellenübersicht der Volleyball Bundesliga sowie veröffentlichte Spielinfos/Statistiken der VBL, sobald verfügbar. 【F:src/usc_kommentatoren/report.py†L2336-L2388】【F:src/usc_kommentatoren/report.py†L1893-L1900】
-* Die letzten Ergebnisse und das jeweils nächste Spiel sowohl des USC als auch des kommenden Gegners – inklusive Satzergebnisse, Ballpunkte, MVP-Ehrungen, Schiedsrichter*innen und Zuschauerzahlen, sofern die VBL diese Daten liefert. 【F:src/usc_kommentatoren/report.py†L1850-L1905】【F:src/usc_kommentatoren/report.py†L2331-L2344】【F:src/usc_kommentatoren/__main__.py†L73-L213】
-* Geburtstags-Hinweise für Spielerinnen in einem sieben­tägigen Fenster rund um den Spieltag. 【F:src/usc_kommentatoren/report.py†L2052-L2128】
-* Aufklappbare Kaderübersichten beider Teams mit inline eingebundenem Mannschaftsfoto, Positions- und Größenangaben sowie separaten Blöcken für Trainer*innen/Staff. 【F:src/usc_kommentatoren/report.py†L2294-L2330】
-* Wechselbörse-Sektionen je Team, die Zu- und Abgänge aus der offiziellen VBL-Wechselbörse sammeln. 【F:src/usc_kommentatoren/report.py†L2279-L2330】【F:src/usc_kommentatoren/report.py†L1736-L1848】
-* News-, Instagram- und Saisonrückblick-Abschnitte, die aktuelle Artikel, Social-Media-Links und optional externe Saisonzusammenfassungen bündeln. 【F:src/usc_kommentatoren/report.py†L1945-L2068】【F:src/usc_kommentatoren/report.py†L2134-L2245】
-* Einen eigenen Bereich „Sendeablauf“, der für Streams die geplanten Programmpunkte mit Countdown, Uhrzeit und Dauer als kompakte Tabelle aufbereitet. 【F:src/usc_kommentatoren/report.py†L3536-L3579】
+* Verlinkungen auf die offiziellen Vereinsseiten, die Tabellenübersicht der Volleyball Bundesliga sowie veröffentlichte Spielinfos/Statistiken der VBL, sobald verfügbar. 【F:src/kommentatoren/report.py†L2336-L2388】【F:src/kommentatoren/report.py†L1893-L1900】
+* Die letzten Ergebnisse und das jeweils nächste Spiel sowohl des USC als auch des kommenden Gegners – inklusive Satzergebnisse, Ballpunkte, MVP-Ehrungen, Schiedsrichter*innen und Zuschauerzahlen, sofern die VBL diese Daten liefert. 【F:src/kommentatoren/report.py†L1850-L1905】【F:src/kommentatoren/report.py†L2331-L2344】【F:src/kommentatoren/__main__.py†L73-L213】
+* Geburtstags-Hinweise für Spielerinnen in einem sieben­tägigen Fenster rund um den Spieltag. 【F:src/kommentatoren/report.py†L2052-L2128】
+* Aufklappbare Kaderübersichten beider Teams mit inline eingebundenem Mannschaftsfoto, Positions- und Größenangaben sowie separaten Blöcken für Trainer*innen/Staff. 【F:src/kommentatoren/report.py†L2294-L2330】
+* Wechselbörse-Sektionen je Team, die Zu- und Abgänge aus der offiziellen VBL-Wechselbörse sammeln. 【F:src/kommentatoren/report.py†L2279-L2330】【F:src/kommentatoren/report.py†L1736-L1848】
+* News-, Instagram- und Saisonrückblick-Abschnitte, die aktuelle Artikel, Social-Media-Links und optional externe Saisonzusammenfassungen bündeln. 【F:src/kommentatoren/report.py†L1945-L2068】【F:src/kommentatoren/report.py†L2134-L2245】
+* Einen eigenen Bereich „Sendeablauf“, der für Streams die geplanten Programmpunkte mit Countdown, Uhrzeit und Dauer als kompakte Tabelle aufbereitet. 【F:src/kommentatoren/report.py†L3536-L3579】
 
 Die App-Ansicht wird automatisch erzeugt (Schriftfaktor standardmäßig 0,75), kann aber über die CLI-Optionen skaliert oder deaktiviert werden.
 
@@ -23,9 +23,9 @@ Die App-Ansicht wird automatisch erzeugt (Schriftfaktor standardmäßig 0,75), k
 
 Das Skript `scripts/update_lineups.py` lädt PDF-Spielberichtsbögen des USC sowie der jüngsten Partien des nächsten Gegners, extrahiert Startaufstellungen je Satz und schreibt alles als JSON. Der Datensatz enthält pro Spiel:
 
-* Metadaten (Matchnummer, Datum, Wettbewerb, Spielort) aus dem offiziellen Spielplan. 【F:scripts/update_lineups.py†L33-L58】【F:src/usc_kommentatoren/lineups.py†L24-L121】
-* Verlinkungen zu den Original-PDFs sowie die Positionscodes der VBL. 【F:src/usc_kommentatoren/lineups.py†L640-L706】
-* Startsechs, Satzstände und zugehörige Kaderinformationen zur schnellen Wiederverwendung in Streams oder Social Posts. 【F:src/usc_kommentatoren/lineups.py†L744-L825】
+* Metadaten (Matchnummer, Datum, Wettbewerb, Spielort) aus dem offiziellen Spielplan. 【F:scripts/update_lineups.py†L33-L58】【F:src/kommentatoren/lineups.py†L24-L121】
+* Verlinkungen zu den Original-PDFs sowie die Positionscodes der VBL. 【F:src/kommentatoren/lineups.py†L640-L706】
+* Startsechs, Satzstände und zugehörige Kaderinformationen zur schnellen Wiederverwendung in Streams oder Social Posts. 【F:src/kommentatoren/lineups.py†L744-L825】
 
 Aufrufbeispiel:
 
@@ -48,7 +48,7 @@ Standardmäßig landet die Datei unter `docs/internationale_spiele.html` und kan
 
 Zur Orientierung findest du hier die wichtigsten Verzeichnisse des Projekts im Überblick:
 
-* `src/usc_kommentatoren/`: Python-Paket mit dem CLI-Einstiegspunkt, der Spielplan, News, Kader und Statistiken zusammenzieht und den HTML-Bericht rendert.【F:src/usc_kommentatoren/__main__.py†L1-L129】【F:src/usc_kommentatoren/report.py†L3290-L3342】
+* `src/kommentatoren/`: Python-Paket mit dem CLI-Einstiegspunkt, der Spielplan, News, Kader und Statistiken zusammenzieht und den HTML-Bericht rendert.【F:src/kommentatoren/__main__.py†L1-L129】【F:src/kommentatoren/report.py†L3290-L3342】
 * `scripts/`: Hilfsprogramme für wiederkehrende Aufgaben wie die Aktualisierung des Lineup-Datensatzes oder das Sammeln internationaler Spiele.【F:scripts/update_lineups.py†L1-L78】【F:scripts/update_international_matches.py†L1-L64】
 * `docs/`: Ausgabeordner für generierte HTML-Seiten, JSON-Datensätze und ergänzende Dokumentation rund um die Datenpipelines.【F:docs/lineups_workflow.md†L1-L37】
 * `.github/workflows/`: Automatisierte GitHub-Actions, die Berichte und Datensätze regelmäßig erzeugen und veröffentlichen.【F:.github/workflows/update-lineups.yml†L1-L34】
@@ -77,26 +77,26 @@ Zur Orientierung findest du hier die wichtigsten Verzeichnisse des Projekts im �
 3. Für einmalige Testläufe kannst du die wichtigsten Skripte direkt über `PYTHONPATH=src` aufrufen. Häufige Beispiele:
 
    ```bash
-   PYTHONPATH=src python -m usc_kommentatoren --help
+   PYTHONPATH=src python -m kommentatoren --help
    PYTHONPATH=src python scripts/update_lineups.py --limit 1
    ```
 
 4. Wenn du Änderungen am Code testen möchtest, lösche bei Bedarf die Cache-Verzeichnisse in `data/` oder starte die Skripte mit geänderten `--schedule-path`- bzw. `--roster-dir`-Argumenten, damit neue Daten geladen werden.
 
-5. Für ein tägliches Update kannst du den bestehenden GitHub-Action-Workflow lokal simulieren, indem du `scripts/`-Befehle hintereinander ausführst oder `python -m usc_kommentatoren` in einem Cronjob einplanst.
+5. Für ein tägliches Update kannst du den bestehenden GitHub-Action-Workflow lokal simulieren, indem du `scripts/`-Befehle hintereinander ausführst oder `python -m kommentatoren` in einem Cronjob einplanst.
 
 ## Manuelle Ausführung
 
 Das Paket stellt einen kleinen Helfer bereit, der den offiziellen Spielplan lädt, aktuelle Vereins- und VBL-Meldungen sammelt und die HTML-Dateien erzeugt. Standardmäßig schreibt der Befehl sowohl `docs/index.html` (normale Ansicht) als auch `docs/index_app.html` (Schriftgrößen ca. 75 % für die App-Einbindung), damit beide Varianten direkt von GitHub Pages oder einem anderen statischen Hoster ausgeliefert werden können. Beispiel:
 
 ```bash
-PYTHONPATH=src python -m usc_kommentatoren
+PYTHONPATH=src python -m kommentatoren
 ```
 
 Beim ersten Aufruf (und bei jeder späteren Aktualisierung) lädt das Skript den CSV-Spielplan herunter und speichert ihn unter `data/schedule.csv`. Wenn bereits eine lokale Kopie existiert, wird sie überschrieben. Der Pfad kann mit `--schedule-path` angepasst werden. Zusätzlich lädt der Generator die offiziellen Teamkader als CSV-Export in `data/rosters/`, cacht Mannschaftsfotos im Verzeichnis `data/team_photos/`, ergänzt Saisonstatistiken aus `docs/data/season_results_2024_25.json` und wertet die Wechselbörse aus. Über `--app-output`, `--app-scale` und `--skip-app-output` steuerst du bei Bedarf, wohin die App-Variante geschrieben wird, wie stark die Schrift verkleinert werden soll oder ob sie komplett entfallen darf. Optional kannst du außerdem Zielpfad, Quelle, Anzahl der vergangenen Partien sowie den News-Zeitraum ändern:
 
 ```bash
-PYTHONPATH=src python -m usc_kommentatoren \
+PYTHONPATH=src python -m kommentatoren \
   --schedule-url "https://www.volleyball-bundesliga.de/servlet/league/PlayingScheduleCsvExport?matchSeriesId=776311171" \
   --schedule-path data/custom_schedule.csv \
   --roster-dir data/kader \
@@ -111,14 +111,14 @@ PYTHONPATH=src python -m usc_kommentatoren \
 
 ### CLI-Optionen im Überblick
 
-* `--schedule-url`: CSV-Quelle des Spielplans (Standard: offizieller VBL-Export). 【F:src/usc_kommentatoren/__main__.py†L34-L41】
-* `--schedule-path`: Lokale Datei für den Spielplan-Cache (`data/schedule.csv`). 【F:src/usc_kommentatoren/__main__.py†L52-L58】
-* `--roster-dir`, `--photo-dir`: Zwischenspeicher für Kaderexporte und Teamfotos (Standard: `data/rosters/`, `data/team_photos/`). 【F:src/usc_kommentatoren/__main__.py†L59-L77】
-* `--season-results`: Optionaler JSON-Pfad für Saisonrückblicke. 【F:src/usc_kommentatoren/__main__.py†L78-L115】【F:src/usc_kommentatoren/report.py†L2134-L2245】
-* `--recent-limit`, `--news-lookback`: Anzahl berücksichtigter Spiele und News-Tage. 【F:src/usc_kommentatoren/__main__.py†L88-L103】
-* `--app-output`, `--app-scale`, `--skip-app-output`: Steuerung der App-optimierten HTML-Version. 【F:src/usc_kommentatoren/__main__.py†L42-L51】【F:src/usc_kommentatoren/__main__.py†L216-L233】
+* `--schedule-url`: CSV-Quelle des Spielplans (Standard: offizieller VBL-Export). 【F:src/kommentatoren/__main__.py†L34-L41】
+* `--schedule-path`: Lokale Datei für den Spielplan-Cache (`data/schedule.csv`). 【F:src/kommentatoren/__main__.py†L52-L58】
+* `--roster-dir`, `--photo-dir`: Zwischenspeicher für Kaderexporte und Teamfotos (Standard: `data/rosters/`, `data/team_photos/`). 【F:src/kommentatoren/__main__.py†L59-L77】
+* `--season-results`: Optionaler JSON-Pfad für Saisonrückblicke. 【F:src/kommentatoren/__main__.py†L78-L115】【F:src/kommentatoren/report.py†L2134-L2245】
+* `--recent-limit`, `--news-lookback`: Anzahl berücksichtigter Spiele und News-Tage. 【F:src/kommentatoren/__main__.py†L88-L103】
+* `--app-output`, `--app-scale`, `--skip-app-output`: Steuerung der App-optimierten HTML-Version. 【F:src/kommentatoren/__main__.py†L42-L51】【F:src/kommentatoren/__main__.py†L216-L233】
 
-Weitere Optionen lassen sich über `PYTHONPATH=src python -m usc_kommentatoren --help` einsehen.
+Weitere Optionen lassen sich über `PYTHONPATH=src python -m kommentatoren --help` einsehen.
 
 ## Datenablage & Cache-Verzeichnisse
 
@@ -135,7 +135,7 @@ Alle Pfade lassen sich über die jeweiligen CLI-Argumente anpassen.
 * **Fehlerhafte CSV-Quellen?** Mit `--schedule-path` kannst du einen lokal geprüften Spielplan einlesen, bevor du den offiziellen VBL-Export wieder aktivierst. Gerade vor Saisonstart ändern sich URLs erfahrungsgemäß häufiger.
 * **Langsame Aktualisierungen?** Lösche bei Bedarf die Caches unter `data/` oder lege alternative Verzeichnisse via `--roster-dir`, `--photo-dir` und `--season-results` fest. Der Generator lädt fehlende Dateien automatisch nach, sobald der Cache leer ist.
 * **App-Ansicht testen:** Nutze `--skip-app-output`, wenn du dich auf die Desktop-Variante konzentrieren möchtest. Umgekehrt erzwingt eine Kombination aus `--app-output` und `--app-scale`, dass nur die mobile Fassung regeneriert wird.
-* **Log-Ausgaben beobachten:** Führe das Modul mit `PYTHONPATH=src python -m usc_kommentatoren` direkt im Terminal aus, um HTTP-Anfragen und Cache-Hinweise unmittelbar zu sehen. Kombiniert mit `--help` erkennst du außerdem schnell, welche Optionen für eine manuelle Fehleranalyse zur Verfügung stehen.
+* **Log-Ausgaben beobachten:** Führe das Modul mit `PYTHONPATH=src python -m kommentatoren` direkt im Terminal aus, um HTTP-Anfragen und Cache-Hinweise unmittelbar zu sehen. Kombiniert mit `--help` erkennst du außerdem schnell, welche Optionen für eine manuelle Fehleranalyse zur Verfügung stehen.
 
 ## Automatisierung mit GitHub Actions
 

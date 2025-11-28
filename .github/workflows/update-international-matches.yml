@@ -1,0 +1,39 @@
+name: Update international matches overview
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 2 * * *'
+
+permissions:
+  contents: write  # notwendig, um direkt pushen zu dürfen
+
+jobs:
+  refresh-international-matches:
+    name: Refresh international matches page
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate international matches page
+        run: python scripts/update_international_matches.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/internationale_spiele.html
+          git commit -m "chore: update international matches overview" || echo "No changes to commit"
+          git push origin main
