@@ -18,7 +18,7 @@ def _add_src_to_path() -> None:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Lädt die letzten USC-Spielberichtsbögen sowie die jüngsten Partien des "
+            "Lädt die letzten Skurios-Spielberichtsbögen sowie die jüngsten Partien des "
             "nächsten Gegners und erzeugt den Lineup-Datensatz."
         ),
     )
@@ -26,7 +26,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--limit",
         type=int,
         default=2,
-        help="Anzahl der abgeschlossenen USC-Spiele, die ausgewertet werden (Standard: 2).",
+        help="Anzahl der abgeschlossenen Spiele, die ausgewertet werden (Standard: 2).",
     )
     parser.add_argument(
         "--schedule-url",
@@ -61,7 +61,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main() -> int:
     _add_src_to_path()
-    from usc_kommentatoren import lineups
+    from kommentatoren import lineups
 
     parser = build_parser()
     args = parser.parse_args()
