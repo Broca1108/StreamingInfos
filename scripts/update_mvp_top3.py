@@ -16,8 +16,8 @@ def _add_src_to_path() -> None:
 
 _add_src_to_path()
 
-from usc_kommentatoren.mvp import MVP_INDICATORS, TEAM_RANKING_FILTERS, collect_mvp_rankings
-from usc_kommentatoren.report import normalize_name
+from kommentatoren.mvp import MVP_INDICATORS, TEAM_RANKING_FILTERS, collect_mvp_rankings
+from kommentatoren.report import normalize_name
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
