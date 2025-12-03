@@ -34,11 +34,11 @@ jobs:
       - name: ✅ Check sources compile
         run: python -m compileall src
 
-      - name: 🛠 Generate USC HTML report
+      - name: 🛠 Generate Skurios HTML report
         env:
           PYTHONPATH: src
         run: |
-          python -m usc_kommentatoren
+          python -m kommentatoren
 
           # Cache-Busting: Commit-Hash und Zeitstempel in HTML einfügen
           COMMIT_HASH=$(git rev-parse --short HEAD)
