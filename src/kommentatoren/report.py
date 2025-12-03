@@ -51,12 +51,12 @@ WECHSELBOERSE_URL = "https://www.volleyball-bundesliga.de/cms/home/1_bundesliga_
 TEAM_PAGE_URL = "https://www.volleyball-bundesliga.de/cms/home/1_bundesliga_frauen/teams_spielerinnen/mannschaften.xhtml"
 BERLIN_TIMEZONE_NAME = "Europe/Berlin"
 BERLIN_TZ = ZoneInfo(BERLIN_TIMEZONE_NAME)
-USC_CANONICAL_NAME = "USC Münster"
-USC_HOMEPAGE = "https://www.usc-muenster.de/"
+USC_CANONICAL_NAME = "Skurios Volleys Borken"
+USC_HOMEPAGE = "https://www.skurios-volleys-borken.de/"
 TEAM_LINKS_CSV_PATH = Path(__file__).with_name("team_links.csv")
 _POSTAL_CODE_PREFIX_RE = re.compile(r"^\d{4,5}(?:[-/ ]\d{4,5})?\s+(?P<city>.+)$")
 
-# Farbkonfiguration für Hervorhebungen von USC und Gegner.
+# Farbkonfiguration für Hervorhebungen von Skurios und Gegner.
 # Werte können bei Bedarf angepasst werden, um die farbliche Darstellung global zu ändern.
 HIGHLIGHT_COLORS: Dict[str, Dict[str, str]] = {
     "usc": {
