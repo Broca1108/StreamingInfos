@@ -16,7 +16,7 @@ import requests
 
 USER_AGENT = {"User-Agent": "Mozilla/5.0 (compatible; usc-streaminginfos-bot/2.0)"}
 DEFAULT_OUTPUT_PATH = Path("docs/data/direct_comparisons.json")
-USC_KEYWORD = "usc"
+USC_KEYWORD = "skurios"
 
 
 @dataclass(frozen=True)
