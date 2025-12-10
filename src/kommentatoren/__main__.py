@@ -125,7 +125,7 @@ def build_parser() -> argparse.ArgumentParser:
 def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
-
+    print("Skurios Main Start: ", USC_CANONICAL_NAME)
     download_schedule(
         args.schedule_path,
         url=args.schedule_url,
@@ -154,7 +154,7 @@ def main() -> int:
         next_home.away_team,
         reference=reference_time,
     )
-
+    print("Nächster Gegner:" opponent_next)
     usc_upcoming_matches: List["Match"] = []
     if usc_next:
         usc_upcoming_matches.append(usc_next)
@@ -358,9 +358,9 @@ def main() -> int:
     manifest_path = output_dir / "manifest.webmanifest"
     start_url = f"./{app_relative}" if app_relative else f"./{output_relative}"
     manifest_payload = {
-        "name": "USC Streaminginfos",
-        "short_name": "USC Infos",
-        "description": "Aktuelle Informationen und Statistiken zu USC Münster.",
+        "name": "Skurios Streaminginfos",
+        "short_name": "Skurios Infos",
+        "description": "Aktuelle Informationen und Statistiken zu Skurios Volleys Borken.",
         "lang": "de",
         "start_url": start_url,
         "scope": "./",
