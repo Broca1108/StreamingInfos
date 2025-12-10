@@ -79,7 +79,7 @@ class MatchLineups:
     @property
     def usc_code(self) -> Optional[str]:
         for code, name in self.team_names.items():
-            if "usc" in _simplify(name):
+            if "skurios" in _simplify(name):
                 return code
         return None
 
@@ -164,8 +164,8 @@ def find_recent_usc_matches(rows: Sequence[ScheduleRow], limit: int = 2) -> List
         for row in rows
         if row.is_finished
         and (
-            "usc" in _simplify(row.home_team)
-            or "usc" in _simplify(row.away_team)
+            "skurios" in _simplify(row.home_team)
+            or "skurios" in _simplify(row.away_team)
         )
     ]
     usc_rows.sort(key=lambda row: row.kickoff, reverse=True)
@@ -181,7 +181,7 @@ def find_next_usc_home_match_row(
     home_games = [
         row
         for row in rows
-        if row.kickoff >= now and "usc" in _simplify(row.home_team)
+        if row.kickoff >= now and "skurios" in _simplify(row.home_team)
     ]
     home_games.sort(key=lambda row: row.kickoff)
     return home_games[0] if home_games else None
@@ -804,7 +804,7 @@ def _serialize_dataset(
         away_code = _find_team_code(match.team_names, match.match.away_team)
 
         focus_code: Optional[str] = None
-        if focus == "usc":
+        if focus == "skurios":
             focus_code = usc_code
         elif focus == "opponent":
             focus_code = None
