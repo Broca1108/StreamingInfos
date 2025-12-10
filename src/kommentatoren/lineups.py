@@ -216,7 +216,7 @@ def fetch_schedule_pdf_links(page_url: str = SCHEDULE_PAGE_URL) -> Dict[str, str
     links: Dict[str, str] = {}
     for anchor in soup.select("a[href]"):
         href = anchor["href"]
-                if "scoresheet/pdf" not in href:
+        if "scoresheet/pdf" not in href:
             continue
         print("href: ", href)            
         match = re.search(r"/([0-9]{4})(?:_[0-9]+)?/?$", href)
