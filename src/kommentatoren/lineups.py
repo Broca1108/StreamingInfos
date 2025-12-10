@@ -757,8 +757,7 @@ def build_lineup_dataset(
     matches: List[Tuple[str, MatchLineups]] = []
     for focus, row in match_requests:
         pdf_url = pdf_links.get(row.match_number)
-        if not pdf_url:
-            pdf_url = pdf_links.get(f"{row.match_number}_1")
+      
         if not pdf_url:    
             raise RuntimeError(f"Kein PDF-Link für Spiel {row.match_number} gefunden.")
         pdf_path = pdf_cache_dir / f"{row.match_number}.pdf"
