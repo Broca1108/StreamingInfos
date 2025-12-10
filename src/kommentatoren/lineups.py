@@ -218,7 +218,7 @@ def fetch_schedule_pdf_links(page_url: str = SCHEDULE_PAGE_URL) -> Dict[str, str
         href = anchor["href"]
         if "scoresheet/pdf" not in href:
             continue
-        match = re.search(r"/([0-9]{4})/?$", href)
+        match = re.search(r"/([0-9]{4})(?:_[0-9]+)?/?$", href)
         if not match:
             continue
         match_number = match.group(1)
