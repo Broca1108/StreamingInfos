@@ -141,8 +141,8 @@ def main() -> int:
         schedule_metadata = {}
     next_home = find_next_usc_home_match(matches)
     if not next_home:
-        raise SystemExit("Kein zukünftiges Heimspiel des USC Münster gefunden.")
-
+        raise SystemExit("Kein zukünftiges Heimspiel der Skurios Volleys gefunden.")
+    print("Next home:", next_home)
     reference_time = next_home.kickoff + timedelta(seconds=1)
     usc_next = find_next_match_for_team(
         matches,
