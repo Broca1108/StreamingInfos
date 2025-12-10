@@ -59,7 +59,7 @@ _POSTAL_CODE_PREFIX_RE = re.compile(r"^\d{4,5}(?:[-/ ]\d{4,5})?\s+(?P<city>.+)$"
 # Farbkonfiguration für Hervorhebungen von Skurios und Gegner.
 # Werte können bei Bedarf angepasst werden, um die farbliche Darstellung global zu ändern.
 HIGHLIGHT_COLORS: Dict[str, Dict[str, str]] = {
-    "usc": {
+    "skurios": {
         "row_bg": "#dcfce7",
         "row_text": "#047857",
         "legend_dot": "#16a34a",
@@ -1483,7 +1483,7 @@ def slugify_team_name(value: str) -> str:
 
 def is_usc(name: str) -> bool:
     normalized = normalize_name(name)
-    return "usc" in normalized and "munster" in normalized
+    return "skurios" in normalized and "borken" in normalized
 
 
 def _build_team_homepages() -> Dict[str, str]:
@@ -3576,7 +3576,7 @@ def format_mvp_rankings_section(
                 return row[index].strip()
             return ""
 
-        team_entries: Dict[str, List[Dict[str, str]]] = {"opponent": [], "usc": []}
+        team_entries: Dict[str, List[Dict[str, str]]] = {"opponent": [], "skurios": []}
         for row in rows:
             values: Dict[str, str] = {}
             for header, idx in header_index.items():
@@ -3624,7 +3624,7 @@ def format_mvp_rankings_section(
             if matches_team(normalized_team, normalized_opponent):
                 team_role = "opponent"
             elif matches_team(normalized_team, normalized_usc):
-                team_role = "usc"
+                team_role = "skurios"
             else:
                 continue
 
@@ -3649,7 +3649,7 @@ def format_mvp_rankings_section(
             team_entries[team_role].append(entry)
 
         ordered_entries: List[Dict[str, str]] = []
-        for team_key in ("opponent", "usc"):
+        for team_key in ("opponent", "skurios"):
             ordered_entries.extend(team_entries[team_key][:3])
 
         list_items: List[str] = []
@@ -4139,7 +4139,7 @@ def build_html_report(
         return "\n      ".join(combined)
 
     highlight_targets = {
-        "usc": USC_CANONICAL_NAME,
+        "skurios": USC_CANONICAL_NAME,
         "opponent": next_home.away_team,
     }
 
@@ -5223,12 +5223,12 @@ def build_html_report(
     .match-stats-table tbody tr + tr td {{
       border-top: 1px solid #e2e8f0;
     }}
-    .match-stats-table tbody tr[data-team-role="usc"] {{
+    .match-stats-table tbody tr[data-team-role="skurios"] {{
       background: var(--usc-highlight-row-bg);
       color: var(--usc-highlight-row-text);
     }}
-    .match-stats-table tbody tr[data-team-role="usc"] th,
-    .match-stats-table tbody tr[data-team-role="usc"] td {{
+    .match-stats-table tbody tr[data-team-role="skurios"] th,
+    .match-stats-table tbody tr[data-team-role="skurios"] td {{
       color: inherit;
     }}
     .match-stats-table tbody tr[data-team-role="opponent"] {{
@@ -5246,7 +5246,7 @@ def build_html_report(
       box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
       border: 1px solid rgba(148, 163, 184, 0.35);
     }}
-    .match-stats-card[data-team-role="usc"] {{
+    .match-stats-card[data-team-role="skurios"] {{
       border-color: var(--usc-highlight-card-border);
       box-shadow: 0 14px 30px var(--usc-highlight-card-shadow);
     }}
@@ -5402,7 +5402,7 @@ def build_html_report(
       border-radius: 50%;
       box-shadow: inset 0 0 0 2px rgba(15, 23, 42, 0.15);
     }}
-    .mvp-legend-item[data-team="usc"]::before {{
+    .mvp-legend-item[data-team="skurios"]::before {{
       background: var(--usc-highlight-legend-dot);
     }}
     .mvp-legend-item[data-team="opponent"]::before {{
@@ -5511,11 +5511,11 @@ def build_html_report(
     .mvp-entry[data-team="opponent"] .mvp-entry-score {{
       color: var(--opponent-highlight-mvp-score);
     }}
-    .mvp-entry[data-team="usc"] {{
+    .mvp-entry[data-team="skurios"] {{
       background: var(--usc-highlight-mvp-bg);
       box-shadow: inset 0 0 0 1px var(--usc-highlight-mvp-border);
     }}
-    .mvp-entry[data-team="usc"] .mvp-entry-score {{
+    .mvp-entry[data-team="skurios"] .mvp-entry-score {{
       color: var(--usc-highlight-mvp-score);
     }}
     @media (max-width: 38rem) {{
@@ -5994,7 +5994,7 @@ def build_html_report(
       .match-stats-table tbody td {{
         color: #e2f3f7;
       }}
-      .match-stats-table tbody tr[data-team-role="usc"] {{
+      .match-stats-table tbody tr[data-team-role="skurios"] {{
         background: var(--usc-highlight-row-bg);
         color: var(--usc-highlight-row-text);
       }}
