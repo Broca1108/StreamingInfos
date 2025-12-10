@@ -4572,16 +4572,16 @@ def build_html_report(
       --theme-color: {THEME_COLORS['mvp_overview_summary_bg']};
       --accordion-opponent-bg: {HIGHLIGHT_COLORS['opponent']['accordion_bg']};
       --accordion-opponent-shadow: {HIGHLIGHT_COLORS['opponent']['accordion_shadow']};
-      --accordion-usc-bg: {HIGHLIGHT_COLORS['usc']['accordion_bg']};
-      --accordion-usc-shadow: {HIGHLIGHT_COLORS['usc']['accordion_shadow']};
-      --usc-highlight-row-bg: {HIGHLIGHT_COLORS['usc']['row_bg']};
-      --usc-highlight-row-text: {HIGHLIGHT_COLORS['usc']['row_text']};
-      --usc-highlight-card-border: {HIGHLIGHT_COLORS['usc']['card_border']};
-      --usc-highlight-card-shadow: {HIGHLIGHT_COLORS['usc']['card_shadow']};
-      --usc-highlight-mvp-bg: {HIGHLIGHT_COLORS['usc']['mvp_bg']};
-      --usc-highlight-mvp-border: {HIGHLIGHT_COLORS['usc']['mvp_border']};
-      --usc-highlight-mvp-score: {HIGHLIGHT_COLORS['usc']['mvp_score']};
-      --usc-highlight-legend-dot: {HIGHLIGHT_COLORS['usc']['legend_dot']};
+      --accordion-usc-bg: {HIGHLIGHT_COLORS['skurios']['accordion_bg']};
+      --accordion-usc-shadow: {HIGHLIGHT_COLORS['skurios']['accordion_shadow']};
+      --usc-highlight-row-bg: {HIGHLIGHT_COLORS['skurios']['row_bg']};
+      --usc-highlight-row-text: {HIGHLIGHT_COLORS['skurios']['row_text']};
+      --usc-highlight-card-border: {HIGHLIGHT_COLORS['skurios']['card_border']};
+      --usc-highlight-card-shadow: {HIGHLIGHT_COLORS['skurios']['card_shadow']};
+      --usc-highlight-mvp-bg: {HIGHLIGHT_COLORS['skurios']['mvp_bg']};
+      --usc-highlight-mvp-border: {HIGHLIGHT_COLORS['skurios']['mvp_border']};
+      --usc-highlight-mvp-score: {HIGHLIGHT_COLORS['skurios']['mvp_score']};
+      --usc-highlight-legend-dot: {HIGHLIGHT_COLORS['skurios']['legend_dot']};
       --opponent-highlight-row-bg: {HIGHLIGHT_COLORS['opponent']['row_bg']};
       --opponent-highlight-row-text: {HIGHLIGHT_COLORS['opponent']['row_text']};
       --opponent-highlight-card-border: {HIGHLIGHT_COLORS['opponent']['card_border']};
@@ -4990,7 +4990,7 @@ def build_html_report(
       text-align: center;
     }}
     .direct-comparison__metric-team--usc {{
-      color: {HIGHLIGHT_COLORS['usc']['row_text']};
+      color: {HIGHLIGHT_COLORS['skurios']['row_text']};
     }}
     .direct-comparison__metric-team--opponent {{
       color: {HIGHLIGHT_COLORS['opponent']['row_text']};
@@ -5049,7 +5049,7 @@ def build_html_report(
       text-align: right;
     }}
     .direct-comparison__result--win {{
-      color: {HIGHLIGHT_COLORS['usc']['row_text']};
+      color: {HIGHLIGHT_COLORS['skurios']['row_text']};
     }}
     .direct-comparison__result--loss {{
       color: #b91c1c;
@@ -5850,10 +5850,10 @@ def build_html_report(
       :root {{
         --accordion-opponent-bg: {HIGHLIGHT_COLORS['opponent']['dark_accordion_bg']};
         --accordion-opponent-shadow: {HIGHLIGHT_COLORS['opponent']['dark_accordion_shadow']};
-        --accordion-usc-bg: {HIGHLIGHT_COLORS['usc']['dark_accordion_bg']};
-        --accordion-usc-shadow: {HIGHLIGHT_COLORS['usc']['dark_accordion_shadow']};
-        --usc-highlight-row-bg: {HIGHLIGHT_COLORS['usc']['dark_row_bg']};
-        --usc-highlight-row-text: {HIGHLIGHT_COLORS['usc']['dark_row_text']};
+        --accordion-usc-bg: {HIGHLIGHT_COLORS['skurios']['dark_accordion_bg']};
+        --accordion-usc-shadow: {HIGHLIGHT_COLORS['skurios']['dark_accordion_shadow']};
+        --usc-highlight-row-bg: {HIGHLIGHT_COLORS['skurios']['dark_row_bg']};
+        --usc-highlight-row-text: {HIGHLIGHT_COLORS['skurios']['dark_row_text']};
         --opponent-highlight-row-bg: {HIGHLIGHT_COLORS['opponent']['dark_row_bg']};
         --opponent-highlight-row-text: {HIGHLIGHT_COLORS['opponent']['dark_row_text']};
         --mvp-overview-summary-bg: {THEME_COLORS['dark_mvp_overview_summary_bg']};
