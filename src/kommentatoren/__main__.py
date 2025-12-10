@@ -154,7 +154,7 @@ def main() -> int:
         next_home.away_team,
         reference=reference_time,
     )
-    print("Nächster Gegner:" opponent_next)
+    print("Nächster Gegner:", opponent_next)
     usc_upcoming_matches: List["Match"] = []
     if usc_next:
         usc_upcoming_matches.append(usc_next)
