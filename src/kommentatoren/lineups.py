@@ -223,6 +223,8 @@ def fetch_schedule_pdf_links(page_url: str = SCHEDULE_PAGE_URL) -> Dict[str, str
             continue
         match_number = match.group(1)
         links[match_number] = href
+        print("match_number: ", match_number)
+        print("href: ", href)
     return links
 
 
