@@ -743,7 +743,7 @@ def build_lineup_dataset(
     pdf_links = fetch_schedule_pdf_links(schedule_page_url)
 
     match_requests: List[Tuple[str, ScheduleRow]] = [
-        ("usc", row) for row in recent_rows
+        ("skurios", row) for row in recent_rows
     ]
     match_requests.extend(("opponent", row) for row in opponent_rows)
 
