@@ -218,7 +218,6 @@ def fetch_schedule_pdf_links(page_url: str = SCHEDULE_PAGE_URL) -> Dict[str, str
         href = anchor["href"]
         if "scoresheet/pdf" not in href:
             continue
-        print("href: ", href)            
         match = re.search(r"/([0-9]{4})(?:_[0-9]+)?/?$", href)
         if not match:
             continue
@@ -742,7 +741,8 @@ def build_lineup_dataset(
         opponent_name,
         limit=limit,
     )
-
+    print("Schedule_csv_url:", schedule_csv_url)
+    print("Schedule_page_url:", schedule_page_url)
     pdf_links = fetch_schedule_pdf_links(schedule_page_url)
 
     match_requests: List[Tuple[str, ScheduleRow]] = [
