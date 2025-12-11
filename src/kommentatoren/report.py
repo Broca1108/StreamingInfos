@@ -4068,6 +4068,7 @@ def build_html_report(
     mvp_rankings: Optional[Mapping[str, Mapping[str, Any]]] = None,
     direct_comparison: Optional[DirectComparisonData] = None,
 ) -> str:
+    print("HTM Datei ERZEUGUNG!")
     heading = pretty_name(next_home.away_team)
     kickoff_raw = next_home.kickoff
     if kickoff_raw.tzinfo is None:
@@ -4549,7 +4550,7 @@ def build_html_report(
     scale_value = f"{font_scale:.4f}".rstrip("0").rstrip(".")
     if not scale_value:
         scale_value = "1"
-
+    print("Generate HTML Start")
     html = f"""<!DOCTYPE html>
 <html lang=\"de\">
 <head>
@@ -4563,7 +4564,7 @@ def build_html_report(
   <link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"favicon.png\">
   <link rel=\"apple-touch-icon\" href=\"favicon.png\">
   <link rel=\"manifest\" href=\"manifest.webmanifest\">
-  <title>Nächster USC-Heimgegner</title>
+  <title>Nächster Skurios-Heimgegner</title>
   <style>
     :root {{
       color-scheme: light dark;
@@ -6151,7 +6152,7 @@ def build_html_report(
 </head>
 <body>
   <main>
-    <h1>Nächster USC-Heimgegner:<br><span data-next-opponent>{escape(heading)}</span></h1>
+    <h1>Nächster Skurios-Heimgegner:<br><span data-next-opponent>{escape(heading)}</span></h1>
 {hero_layout_html}
 {notes_html}
     <section>
@@ -6475,7 +6476,8 @@ def build_html_report(
 </body>
 </html>
 """
-
+    print("Generate HTML End")
+    print(html)
     return html
 
 
