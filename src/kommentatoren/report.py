@@ -4005,7 +4005,7 @@ def _format_season_results_section(
         f"          <li><a href=\"{escape(internal_link_url)}\">{escape(internal_link_label)}</a></li>"
     )
     link_items.append(
-        "          <li><a href=\"https://uscmuenster.github.io/scouting/index2.html\" rel=\"noopener\" target=\"_blank\">Scouting USC Münster</a></li>"
+        "          <li><a href=\"https://uscmuenster.github.io/scouting/index2.html\" rel=\"noopener\" target=\"_blank\">Scouting Skurios Volleys Borken</a></li>"
     )
     link_items.append(
         "          <li><a href=\"https://github.com/uscmuenster/usc_streaminginfos\" rel=\"noopener\" target=\"_blank\">GitHub Projekt - Streaminginfos</a></li>"
@@ -4266,7 +4266,7 @@ def build_html_report(
     )
     if usc_url:
         meta_lines.append(
-            f"<p><a class=\"meta-link\" href=\"{escape(usc_url)}\">Homepage USC Münster</a></p>"
+            f"<p><a class=\"meta-link\" href=\"{escape(usc_url)}\">Homepage Skurios Volleys Borken</a></p>"
         )
     if opponent_url:
         meta_lines.append(
