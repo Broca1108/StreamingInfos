@@ -1,7 +1,7 @@
 {
-  "name": "USC Streaminginfos",
-  "short_name": "USC Infos",
-  "description": "Aktuelle Informationen und Statistiken zu USC Münster.",
+  "name": "Skurios Streaminginfos",
+  "short_name": "Skurios Infos",
+  "description": "Aktuelle Informationen und Statistiken zu Skurios Volleys Borken.",
   "lang": "de",
   "start_url": "./index_app.html",
   "scope": "./",
