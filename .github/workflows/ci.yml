@@ -62,11 +62,16 @@ jobs:
           rm -rf *
 
           # 3️⃣ gespeicherte Dateien zurückkopieren
+          echo "1. Kopie zurückkopieren"
           cp -r /tmp/ghpages/* .
+          echo "2. Kopie zurückkopieren"
+          cp -r /tmp/ghpages/* ./docs
           touch .nojekyll
 
           # 4️⃣ commit & push
+          echo "git add -a"
           git add -A
+          echo "git commit"
           git commit -m "🚀 Deploy $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push -f origin gh-pages
 
