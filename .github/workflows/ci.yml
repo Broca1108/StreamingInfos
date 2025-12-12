@@ -65,7 +65,7 @@ jobs:
           echo "1. Kopie zurückkopieren"
           cp -r /tmp/ghpages/* .
           echo "2. Kopie zurückkopieren"
-          cp -r /tmp/ghpages/* ./docs
+
           touch .nojekyll
 
           # 4️⃣ commit & push
