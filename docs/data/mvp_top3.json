@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-29T03:58:38.582699+00:00",
+  "generated_at": "2025-12-30T03:46:28.819983+00:00",
   "usc_team": "Skurios Volleys Borken",
   "opponent_team": "VC Wiesbaden",
   "limit": 3,
@@ -9,7 +9,111 @@
       "label": "alle Spielelemente / Top-Scorer",
       "usc": [
         {
-          "Rang": "7.",
+          "Rang": "31.",
+          "column_1": "",
+          "Name": "Kretschmer, Lara",
+          "Sätze": "31",
+          "Spiele": "10",
+          "Position": "Mittelblock",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "119",
+          "Wert2": "52",
+          "Wert3": "20",
+          "Kennzahl": "26,9%",
+          "Wertung": "",
+          "ranking": "119"
+        },
+        {
+          "Rang": "39.",
+          "column_1": "",
+          "Name": "Loker, Marika",
+          "Sätze": "31",
+          "Spiele": "10",
+          "Position": "Diagonal",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "186",
+          "Wert2": "72",
+          "Wert3": "26",
+          "Kennzahl": "24,7%",
+          "Wertung": "",
+          "ranking": "186"
+        },
+        {
+          "Rang": "57.",
+          "column_1": "",
+          "Name": "Piest, Madleen",
+          "Sätze": "19",
+          "Spiele": "9",
+          "Position": "Außenangriff",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "60",
+          "Wert2": "22",
+          "Wert3": "12",
+          "Kennzahl": "16,7%",
+          "Wertung": "",
+          "ranking": "60"
+        }
+      ],
+      "opponent": [
+        {
+          "Rang": "13.",
+          "column_1": "",
+          "Name": "Clayton, Hannah",
+          "Sätze": "32",
+          "Spiele": "10",
+          "Position": "Mittelblock",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Vereinigte Staaten von Amerika (USA)",
+          "Wert1": "78",
+          "Wert2": "35",
+          "Wert3": "9",
+          "Kennzahl": "33,3%",
+          "Wertung": "",
+          "ranking": "78"
+        },
+        {
+          "Rang": "14.",
+          "column_1": "",
+          "Name": "Konijnenberg, Sanne",
+          "Sätze": "37",
+          "Spiele": "10",
+          "Position": "Zuspiel",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Niederlande (NED)",
+          "Wert1": "46",
+          "Wert2": "19",
+          "Wert3": "4",
+          "Kennzahl": "32,6%",
+          "Wertung": "",
+          "ranking": "46"
+        },
+        {
+          "Rang": "24.",
+          "column_1": "",
+          "Name": "Broekstra, Laura",
+          "Sätze": "36",
+          "Spiele": "10",
+          "Position": "Mittelblock",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "105",
+          "Wert2": "43",
+          "Wert3": "13",
+          "Kennzahl": "28,6%",
+          "Wertung": "",
+          "ranking": "105"
+        }
+      ]
+    },
+    {
+      "id": "29593924",
+      "label": "Aufschlag / Quote Aufschläge mit Wirkung",
+      "usc": [
+        {
+          "Rang": "9.",
           "column_1": "",
           "Name": "Kretschmer, Lara",
           "Sätze": "31",
@@ -41,7 +145,7 @@
           "ranking": "0,6"
         },
         {
-          "Rang": "39.",
+          "Rang": "43.",
           "column_1": "",
           "Name": "Coenders, Fabienne",
           "Sätze": "30",
@@ -59,61 +163,77 @@
       ],
       "opponent": [
         {
-          "Rang": "5.",
+          "Rang": "7.",
           "column_1": "",
           "Name": "Broekstra, Laura",
-          "Sätze": "0,1",
-          "Spiele": "4,2%",
+          "Sätze": "36",
+          "Spiele": "10",
           "Position": "Mittelblock",
           "Mannschaft": "Wiesbaden",
           "Nation": "Deutschland (GER)",
-          "Wert1": "96",
+          "Wert1": "0,6",
           "Wert2": "21",
           "Wert3": "",
           "Kennzahl": "",
           "Wertung": "",
-          "ranking": "96"
+          "ranking": "0,6"
         },
         {
-          "Rang": "16.",
+          "Rang": "17.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
-          "Sätze": "0,1",
-          "Spiele": "6,7%",
+          "Sätze": "30",
+          "Spiele": "8",
           "Position": "Außenangriff",
           "Mannschaft": "Wiesbaden",
           "Nation": "Niederlande (NED)",
-          "Wert1": "60",
+          "Wert1": "0,5",
           "Wert2": "14",
           "Wert3": "",
           "Kennzahl": "",
           "Wertung": "",
-          "ranking": "60"
+          "ranking": "0,5"
         },
         {
-          "Rang": "23.",
+          "Rang": "25.",
           "column_1": "",
           "Name": "Clayton, Hannah",
-          "Sätze": "0,1",
-          "Spiele": "2,9%",
+          "Sätze": "32",
+          "Spiele": "10",
           "Position": "Mittelblock",
           "Mannschaft": "Wiesbaden",
           "Nation": "Vereinigte Staaten von Amerika (USA)",
-          "Wert1": "70",
+          "Wert1": "0,4",
           "Wert2": "12",
           "Wert3": "",
           "Kennzahl": "",
           "Wertung": "",
-          "ranking": "70"
+          "ranking": "0,4"
         }
       ]
     },
     {
-      "id": "29593924",
-      "label": "Aufschlag / Quote Aufschläge mit Wirkung",
+      "id": "31385020",
+      "label": "Annahme / Quote perfekte oder gute Annahme",
       "usc": [
         {
-          "Rang": "12.",
+          "Rang": "24.",
+          "column_1": "",
+          "Name": "Coenders, Fabienne",
+          "Sätze": "10",
+          "Spiele": "24,3%",
+          "Position": "Außenangriff",
+          "Mannschaft": "Borken",
+          "Nation": "Niederlande (NED)",
+          "Wert1": "107",
+          "Wert2": "0,3",
+          "Wert3": "7,5%",
+          "Kennzahl": "30",
+          "Wertung": "8",
+          "ranking": "107 | 8"
+        },
+        {
+          "Rang": "24.",
           "column_1": "",
           "Name": "Rudde, Hannah",
           "Sätze": "10",
@@ -125,40 +245,128 @@
           "Wert2": "0,3",
           "Wert3": "13,3%",
           "Kennzahl": "27",
-          "Wertung": "35,0%",
-          "ranking": "60 | 35,0%"
+          "Wertung": "8",
+          "ranking": "60 | 8"
         },
         {
-          "Rang": "22.",
+          "Rang": "31.",
           "column_1": "",
-          "Name": "Loker, Marika",
+          "Name": "Mohr, Pia",
           "Sätze": "10",
-          "Spiele": "30,0%",
-          "Position": "Diagonal",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "90",
-          "Wert2": "0,2",
-          "Wert3": "5,6%",
-          "Kennzahl": "31",
-          "Wertung": "30,0%",
-          "ranking": "90 | 30,0%"
-        },
-        {
-          "Rang": "28.",
-          "column_1": "",
-          "Name": "Bernhard, Lena",
-          "Sätze": "8",
-          "Spiele": "29,2%",
+          "Spiele": "28,1%",
           "Position": "Außenangriff",
           "Mannschaft": "Borken",
           "Nation": "Deutschland (GER)",
-          "Wert1": "24",
-          "Wert2": "0,1",
-          "Wert3": "4,2%",
-          "Kennzahl": "10",
-          "Wertung": "29,2%",
-          "ranking": "24 | 29,2%"
+          "Wert1": "64",
+          "Wert2": "0,3",
+          "Wert3": "10,9%",
+          "Kennzahl": "27",
+          "Wertung": "7",
+          "ranking": "64 | 7"
+        }
+      ],
+      "opponent": [
+        {
+          "Rang": "4.",
+          "column_1": "",
+          "Name": "Boom, Dagmar",
+          "Sätze": "10",
+          "Spiele": "30,8%",
+          "Position": "Außenangriff",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Niederlande (NED)",
+          "Wert1": "133",
+          "Wert2": "0,4",
+          "Wert3": "11,3%",
+          "Kennzahl": "36",
+          "Wertung": "15",
+          "ranking": "133 | 15"
+        },
+        {
+          "Rang": "8.",
+          "column_1": "",
+          "Name": "Fernandez Gayoso, Jimena",
+          "Sätze": "10",
+          "Spiele": "27,6%",
+          "Position": "Diagonal",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Spanien (ESP)",
+          "Wert1": "98",
+          "Wert2": "0,4",
+          "Wert3": "13,3%",
+          "Kennzahl": "36",
+          "Wertung": "13",
+          "ranking": "98 | 13"
+        },
+        {
+          "Rang": "18.",
+          "column_1": "",
+          "Name": "Konijnenberg, Sanne",
+          "Sätze": "10",
+          "Spiele": "25,0%",
+          "Position": "Zuspiel",
+          "Mannschaft": "Wiesbaden",
+          "Nation": "Niederlande (NED)",
+          "Wert1": "148",
+          "Wert2": "0,2",
+          "Wert3": "6,1%",
+          "Kennzahl": "37",
+          "Wertung": "9",
+          "ranking": "148 | 9"
+        }
+      ]
+    },
+    {
+      "id": "29593922",
+      "label": "Aufschlag / Quote Aufschlagpunkte",
+      "usc": [
+        {
+          "Rang": "24.",
+          "column_1": "",
+          "Name": "Kretschmer, Lara",
+          "Sätze": "10",
+          "Spiele": "52",
+          "Position": "Mittelblock",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "119",
+          "Wert2": "20",
+          "Wert3": "31",
+          "Kennzahl": "43,7%",
+          "Wertung": "",
+          "ranking": "119"
+        },
+        {
+          "Rang": "44.",
+          "column_1": "",
+          "Name": "Loker, Marika",
+          "Sätze": "10",
+          "Spiele": "72",
+          "Position": "Diagonal",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "186",
+          "Wert2": "26",
+          "Wert3": "31",
+          "Kennzahl": "38,7%",
+          "Wertung": "",
+          "ranking": "186"
+        },
+        {
+          "Rang": "48.",
+          "column_1": "",
+          "Name": "Piest, Madleen",
+          "Sätze": "9",
+          "Spiele": "22",
+          "Position": "Außenangriff",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "60",
+          "Wert2": "12",
+          "Wert3": "19",
+          "Kennzahl": "36,7%",
+          "Wertung": "",
+          "ranking": "60"
         }
       ],
       "opponent": [
@@ -213,56 +421,56 @@
       ]
     },
     {
-      "id": "31385020",
-      "label": "Annahme / Quote perfekte oder gute Annahme",
+      "id": "60245660",
+      "label": "Annahme / Annahmeeffizienz",
       "usc": [
         {
-          "Rang": "21.",
+          "Rang": "20.",
+          "column_1": "",
+          "Name": "Loker, Marika",
+          "Sätze": "31",
+          "Spiele": "10",
+          "Position": "Diagonal",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "186",
+          "Wert2": "2,3",
+          "Wert3": "38,7%",
+          "Kennzahl": "72",
+          "Wertung": "",
+          "ranking": "186"
+        },
+        {
+          "Rang": "32.",
+          "column_1": "",
+          "Name": "Kretschmer, Lara",
+          "Sätze": "31",
+          "Spiele": "10",
+          "Position": "Mittelblock",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "119",
+          "Wert2": "1,7",
+          "Wert3": "43,7%",
+          "Kennzahl": "52",
+          "Wertung": "",
+          "ranking": "119"
+        },
+        {
+          "Rang": "35.",
           "column_1": "",
           "Name": "Coenders, Fabienne",
-          "Sätze": "10",
-          "Spiele": "49",
+          "Sätze": "30",
+          "Spiele": "10",
           "Position": "Außenangriff",
           "Mannschaft": "Borken",
           "Nation": "Niederlande (NED)",
           "Wert1": "195",
-          "Wert2": "21",
-          "Wert3": "30",
-          "Kennzahl": "37,2%",
+          "Wert2": "1,6",
+          "Wert3": "25,1%",
+          "Kennzahl": "49",
           "Wertung": "",
           "ranking": "195"
-        },
-        {
-          "Rang": "22.",
-          "column_1": "",
-          "Name": "Hansen, Ditte Kjær",
-          "Sätze": "9",
-          "Spiele": "0",
-          "Position": "Libero",
-          "Mannschaft": "Borken",
-          "Nation": "Dänemark (DEN)",
-          "Wert1": "0",
-          "Wert2": "0",
-          "Wert3": "28",
-          "Kennzahl": "37,2%",
-          "Wertung": "",
-          "ranking": "0"
-        },
-        {
-          "Rang": "26.",
-          "column_1": "",
-          "Name": "Demirer, Melisa Nafia",
-          "Sätze": "6",
-          "Spiele": "0",
-          "Position": "Libero",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "0",
-          "Wert2": "0",
-          "Wert3": "10",
-          "Kennzahl": "35,2%",
-          "Wertung": "",
-          "ranking": "0"
         }
       ],
       "opponent": [
@@ -283,7 +491,7 @@
           "ranking": "282"
         },
         {
-          "Rang": "19.",
+          "Rang": "20.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
           "Sätze": "30",
@@ -299,7 +507,7 @@
           "ranking": "171"
         },
         {
-          "Rang": "22.",
+          "Rang": "23.",
           "column_1": "",
           "Name": "López Rey, Cayetana",
           "Sätze": "34",
@@ -317,11 +525,27 @@
       ]
     },
     {
-      "id": "29593922",
-      "label": "Aufschlag / Quote Aufschlagpunkte",
+      "id": "29593918",
+      "label": "Angriff / Angriffseffizienz",
       "usc": [
         {
-          "Rang": "9.",
+          "Rang": "11.",
+          "column_1": "",
+          "Name": "Bernhard, Lena",
+          "Sätze": "10",
+          "Spiele": "8",
+          "Position": "Außenangriff",
+          "Mannschaft": "Borken",
+          "Nation": "Deutschland (GER)",
+          "Wert1": "24",
+          "Wert2": "1",
+          "Wert3": "2",
+          "Kennzahl": "29,2%",
+          "Wertung": "8,3%",
+          "ranking": "24 | 8,3%"
+        },
+        {
+          "Rang": "13.",
           "column_1": "",
           "Name": "Gesquiere, Amber",
           "Sätze": "10",
@@ -329,44 +553,28 @@
           "Position": "Mittelblock",
           "Mannschaft": "Borken",
           "Nation": "Belgien (BEL)",
-          "Wert1": "19",
-          "Wert2": "0,8",
-          "Wert3": "42,1%",
-          "Kennzahl": "14,8%",
-          "Wertung": "",
-          "ranking": "19"
+          "Wert1": "27",
+          "Wert2": "4",
+          "Wert3": "3",
+          "Kennzahl": "25,9%",
+          "Wertung": "7,4%",
+          "ranking": "27 | 7,4%"
         },
         {
-          "Rang": "11.",
+          "Rang": "16.",
           "column_1": "",
-          "Name": "Rudde, Hannah",
-          "Sätze": "27",
+          "Name": "Loker, Marika",
+          "Sätze": "31",
           "Spiele": "10",
-          "Position": "Zuspiel",
+          "Position": "Diagonal",
           "Mannschaft": "Borken",
           "Nation": "Deutschland (GER)",
-          "Wert1": "19",
-          "Wert2": "0,1",
-          "Wert3": "10,5%",
-          "Kennzahl": "13,3%",
-          "Wertung": "",
-          "ranking": "19"
-        },
-        {
-          "Rang": "23.",
-          "column_1": "",
-          "Name": "Mohr, Pia",
-          "Sätze": "27",
-          "Spiele": "10",
-          "Position": "Außenangriff",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "152",
-          "Wert2": "1,7",
-          "Wert3": "29,6%",
-          "Kennzahl": "10,9%",
-          "Wertung": "",
-          "ranking": "152"
+          "Wert1": "90",
+          "Wert2": "5",
+          "Wert3": "6",
+          "Kennzahl": "30,0%",
+          "Wertung": "2,2%",
+          "ranking": "90 | 2,2%"
         }
       ],
       "opponent": [
@@ -387,7 +595,7 @@
           "ranking": "13 | 15,4%"
         },
         {
-          "Rang": "15.",
+          "Rang": "17.",
           "column_1": "",
           "Name": "Boom, Dagmar",
           "Sätze": "36",
@@ -403,7 +611,7 @@
           "ranking": "133 | 1,5%"
         },
         {
-          "Rang": "25.",
+          "Rang": "24.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
           "Sätze": "30",
@@ -421,219 +629,11 @@
       ]
     },
     {
-      "id": "60245660",
-      "label": "Annahme / Annahmeeffizienz",
-      "usc": [
-        {
-          "Rang": "24.",
-          "column_1": "",
-          "Name": "Hansen, Ditte Kjær",
-          "Sätze": "28",
-          "Spiele": "9",
-          "Position": "Libero",
-          "Mannschaft": "Borken",
-          "Nation": "Dänemark (DEN)",
-          "Wert1": "0",
-          "Wert2": "0",
-          "Wert3": "0",
-          "Kennzahl": "0,0%",
-          "Wertung": "20,8%",
-          "ranking": "0 | 20,8%"
-        },
-        {
-          "Rang": "25.",
-          "column_1": "",
-          "Name": "Coenders, Fabienne",
-          "Sätze": "30",
-          "Spiele": "10",
-          "Position": "Außenangriff",
-          "Mannschaft": "Borken",
-          "Nation": "Niederlande (NED)",
-          "Wert1": "107",
-          "Wert2": "8",
-          "Wert3": "2",
-          "Kennzahl": "24,3%",
-          "Wertung": "20,5%",
-          "ranking": "107 | 20,5%"
-        },
-        {
-          "Rang": "29.",
-          "column_1": "",
-          "Name": "Mohr, Pia",
-          "Sätze": "27",
-          "Spiele": "10",
-          "Position": "Außenangriff",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "64",
-          "Wert2": "7",
-          "Wert3": "9",
-          "Kennzahl": "28,1%",
-          "Wertung": "17,6%",
-          "ranking": "64 | 17,6%"
-        }
-      ],
-      "opponent": [
-        {
-          "Rang": "7.",
-          "column_1": "",
-          "Name": "Sain, Rene",
-          "Sätze": "37",
-          "Spiele": "10",
-          "Position": "Libero",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Kroatien (CRO)",
-          "Wert1": "0",
-          "Wert2": "0",
-          "Wert3": "0",
-          "Kennzahl": "0,0%",
-          "Wertung": "33,9%",
-          "ranking": "0 | 33,9%"
-        },
-        {
-          "Rang": "13.",
-          "column_1": "",
-          "Name": "Boom, Dagmar",
-          "Sätze": "36",
-          "Spiele": "10",
-          "Position": "Außenangriff",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Niederlande (NED)",
-          "Wert1": "133",
-          "Wert2": "15",
-          "Wert3": "10",
-          "Kennzahl": "30,8%",
-          "Wertung": "29,5%",
-          "ranking": "133 | 29,5%"
-        },
-        {
-          "Rang": "20.",
-          "column_1": "",
-          "Name": "López Rey, Cayetana",
-          "Sätze": "34",
-          "Spiele": "10",
-          "Position": "Außenangriff",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Spanien (ESP)",
-          "Wert1": "84",
-          "Wert2": "1",
-          "Wert3": "10",
-          "Kennzahl": "23,8%",
-          "Wertung": "23,5%",
-          "ranking": "84 | 23,5%"
-        }
-      ]
-    },
-    {
-      "id": "29593918",
-      "label": "Angriff / Angriffseffizienz",
-      "usc": [
-        {
-          "Rang": "30.",
-          "column_1": "",
-          "Name": "Kretschmer, Lara",
-          "Sätze": "31",
-          "Spiele": "10",
-          "Position": "Mittelblock",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "64",
-          "Wert2": "4",
-          "Wert3": "16",
-          "Kennzahl": "20,3%",
-          "Wertung": "26,9%",
-          "ranking": "64 | 26,9%"
-        },
-        {
-          "Rang": "39.",
-          "column_1": "",
-          "Name": "Loker, Marika",
-          "Sätze": "31",
-          "Spiele": "10",
-          "Position": "Diagonal",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "90",
-          "Wert2": "5",
-          "Wert3": "6",
-          "Kennzahl": "30,0%",
-          "Wertung": "24,7%",
-          "ranking": "90 | 24,7%"
-        },
-        {
-          "Rang": "59.",
-          "column_1": "",
-          "Name": "Piest, Madleen",
-          "Sätze": "19",
-          "Spiele": "9",
-          "Position": "Außenangriff",
-          "Mannschaft": "Borken",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "29",
-          "Wert2": "1",
-          "Wert3": "1",
-          "Kennzahl": "24,1%",
-          "Wertung": "16,7%",
-          "ranking": "29 | 16,7%"
-        }
-      ],
-      "opponent": [
-        {
-          "Rang": "14.",
-          "column_1": "",
-          "Name": "Clayton, Hannah",
-          "Sätze": "32",
-          "Spiele": "10",
-          "Position": "Mittelblock",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Vereinigte Staaten von Amerika (USA)",
-          "Wert1": "70",
-          "Wert2": "2",
-          "Wert3": "14",
-          "Kennzahl": "14,3%",
-          "Wertung": "33,3%",
-          "ranking": "70 | 33,3%"
-        },
-        {
-          "Rang": "15.",
-          "column_1": "",
-          "Name": "Konijnenberg, Sanne",
-          "Sätze": "37",
-          "Spiele": "10",
-          "Position": "Zuspiel",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Niederlande (NED)",
-          "Wert1": "148",
-          "Wert2": "9",
-          "Wert3": "8",
-          "Kennzahl": "25,0%",
-          "Wertung": "32,6%",
-          "ranking": "148 | 32,6%"
-        },
-        {
-          "Rang": "25.",
-          "column_1": "",
-          "Name": "Broekstra, Laura",
-          "Sätze": "36",
-          "Spiele": "10",
-          "Position": "Mittelblock",
-          "Mannschaft": "Wiesbaden",
-          "Nation": "Deutschland (GER)",
-          "Wert1": "96",
-          "Wert2": "4",
-          "Wert3": "18",
-          "Kennzahl": "22,9%",
-          "Wertung": "28,6%",
-          "ranking": "96 | 28,6%"
-        }
-      ]
-    },
-    {
       "id": "29593928",
       "label": "Block / Blockpunkte",
       "usc": [
         {
-          "Rang": "7.",
+          "Rang": "9.",
           "column_1": "",
           "Name": "Kretschmer, Lara",
           "Sätze": "31",
@@ -665,7 +665,7 @@
           "ranking": "72 | 15"
         },
         {
-          "Rang": "39.",
+          "Rang": "43.",
           "column_1": "",
           "Name": "Coenders, Fabienne",
           "Sätze": "30",
@@ -683,7 +683,7 @@
       ],
       "opponent": [
         {
-          "Rang": "5.",
+          "Rang": "7.",
           "column_1": "",
           "Name": "Broekstra, Laura",
           "Sätze": "36",
@@ -699,7 +699,7 @@
           "ranking": "96 | 21"
         },
         {
-          "Rang": "16.",
+          "Rang": "17.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
           "Sätze": "30",
@@ -715,7 +715,7 @@
           "ranking": "60 | 14"
         },
         {
-          "Rang": "23.",
+          "Rang": "25.",
           "column_1": "",
           "Name": "Clayton, Hannah",
           "Sätze": "32",
@@ -737,7 +737,7 @@
       "label": "Aufschlag / Aufschlagpunkte",
       "usc": [
         {
-          "Rang": "23.",
+          "Rang": "24.",
           "column_1": "",
           "Name": "Coenders, Fabienne",
           "Sätze": "30",
@@ -753,7 +753,7 @@
           "ranking": "107 | 8"
         },
         {
-          "Rang": "23.",
+          "Rang": "24.",
           "column_1": "",
           "Name": "Rudde, Hannah",
           "Sätze": "27",
@@ -769,7 +769,7 @@
           "ranking": "60 | 8"
         },
         {
-          "Rang": "29.",
+          "Rang": "31.",
           "column_1": "",
           "Name": "Mohr, Pia",
           "Sätze": "27",
@@ -803,7 +803,7 @@
           "ranking": "133 | 15"
         },
         {
-          "Rang": "7.",
+          "Rang": "8.",
           "column_1": "",
           "Name": "Fernandez Gayoso, Jimena",
           "Sätze": "36",
@@ -841,7 +841,7 @@
       "label": "Angriff / Quote Angriffspunkte",
       "usc": [
         {
-          "Rang": "22.",
+          "Rang": "24.",
           "column_1": "",
           "Name": "Kretschmer, Lara",
           "Sätze": "31",
@@ -873,7 +873,7 @@
           "ranking": "90 | 38,7%"
         },
         {
-          "Rang": "50.",
+          "Rang": "48.",
           "column_1": "",
           "Name": "Piest, Madleen",
           "Sätze": "19",
@@ -945,7 +945,7 @@
       "label": "Angriff / Angriffspunkte",
       "usc": [
         {
-          "Rang": "19.",
+          "Rang": "20.",
           "column_1": "",
           "Name": "Loker, Marika",
           "Sätze": "31",
@@ -961,7 +961,7 @@
           "ranking": "90 | 72"
         },
         {
-          "Rang": "31.",
+          "Rang": "32.",
           "column_1": "",
           "Name": "Kretschmer, Lara",
           "Sätze": "31",
@@ -977,7 +977,7 @@
           "ranking": "64 | 52"
         },
         {
-          "Rang": "34.",
+          "Rang": "35.",
           "column_1": "",
           "Name": "Coenders, Fabienne",
           "Sätze": "30",
@@ -1011,7 +1011,7 @@
           "ranking": "98 | 117"
         },
         {
-          "Rang": "19.",
+          "Rang": "20.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
           "Sätze": "30",
@@ -1027,7 +1027,7 @@
           "ranking": "60 | 72"
         },
         {
-          "Rang": "22.",
+          "Rang": "23.",
           "column_1": "",
           "Name": "López Rey, Cayetana",
           "Sätze": "34",
@@ -1065,7 +1065,7 @@
           "ranking": "24 | 8,3%"
         },
         {
-          "Rang": "12.",
+          "Rang": "13.",
           "column_1": "",
           "Name": "Gesquiere, Amber",
           "Sätze": "10",
@@ -1081,7 +1081,7 @@
           "ranking": "27 | 7,4%"
         },
         {
-          "Rang": "14.",
+          "Rang": "16.",
           "column_1": "",
           "Name": "Loker, Marika",
           "Sätze": "31",
@@ -1115,7 +1115,7 @@
           "ranking": "13 | 15,4%"
         },
         {
-          "Rang": "15.",
+          "Rang": "17.",
           "column_1": "",
           "Name": "Boom, Dagmar",
           "Sätze": "36",
@@ -1131,7 +1131,7 @@
           "ranking": "133 | 1,5%"
         },
         {
-          "Rang": "25.",
+          "Rang": "24.",
           "column_1": "",
           "Name": "van der Pijl, Pleun",
           "Sätze": "30",
