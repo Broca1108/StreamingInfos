@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-18T03:53:11.181531+00:00",
+  "generated_at": "2026-01-19T03:58:34.180907+00:00",
   "usc_team": "Skurios Volleys Borken",
   "opponent_team": "VC Wiesbaden",
   "limit": 3,
@@ -163,7 +163,7 @@
       ],
       "opponent": [
         {
-          "Rang": "3.",
+          "Rang": "2.",
           "column_1": "",
           "Name": "Dordevic, Jovana",
           "Sätze": "9",
@@ -179,7 +179,7 @@
           "ranking": "13"
         },
         {
-          "Rang": "3.",
+          "Rang": "2.",
           "column_1": "",
           "Name": "Dordevic, Jovana",
           "Sätze": "9",
@@ -787,36 +787,36 @@
       ],
       "opponent": [
         {
-          "Rang": "–",
-          "column_1": "–",
-          "Name": "–",
-          "Sätze": "–",
-          "Spiele": "–",
-          "Position": "–",
+          "Rang": "2.",
+          "column_1": "",
+          "Name": "Fernandez Gayoso, Jimena",
+          "Sätze": "12",
+          "Spiele": "28,5%",
+          "Position": "Diagonal",
           "Mannschaft": "Wiesbaden",
-          "Nation": "–",
-          "Wert1": "–",
-          "Wert2": "–",
-          "Wert3": "–",
-          "Kennzahl": "–",
-          "Wertung": "–",
-          "ranking": "– | –"
+          "Nation": "Spanien (ESP)",
+          "Wert1": "130",
+          "Wert2": "0,4",
+          "Wert3": "13,8%",
+          "Kennzahl": "43",
+          "Wertung": "18",
+          "ranking": "130 | 18"
         },
         {
-          "Rang": "–",
-          "column_1": "–",
-          "Name": "–",
-          "Sätze": "–",
-          "Spiele": "–",
-          "Position": "–",
+          "Rang": "2.",
+          "column_1": "",
+          "Name": "Fernandez Gayoso, Jimena",
+          "Sätze": "12",
+          "Spiele": "28,5%",
+          "Position": "Diagonal",
           "Mannschaft": "Wiesbaden",
-          "Nation": "–",
-          "Wert1": "–",
-          "Wert2": "–",
-          "Wert3": "–",
-          "Kennzahl": "–",
-          "Wertung": "–",
-          "ranking": "– | –"
+          "Nation": "Spanien (ESP)",
+          "Wert1": "130",
+          "Wert2": "0,4",
+          "Wert3": "13,8%",
+          "Kennzahl": "43",
+          "Wertung": "18",
+          "ranking": "130 | 18"
         },
         {
           "Rang": "–",
