@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-23T03:50:28.396700+00:00",
+  "generated_at": "2026-01-24T03:43:55.255979+00:00",
   "usc_team": "Skurios Volleys Borken",
   "opponent_team": "SSC Palmberg Schwerin",
   "limit": 3,
@@ -321,36 +321,36 @@
       "label": "Aufschlag / Quote Aufschlagpunkte",
       "usc": [
         {
-          "Rang": "–",
-          "column_1": "–",
-          "Name": "–",
-          "Sätze": "–",
-          "Spiele": "–",
-          "Position": "–",
+          "Rang": "3.",
+          "column_1": "",
+          "Name": "Gesquiere, Amber",
+          "Sätze": "10",
+          "Spiele": "6",
+          "Position": "Mittelblock",
           "Mannschaft": "Borken",
-          "Nation": "–",
-          "Wert1": "–",
-          "Wert2": "–",
-          "Wert3": "–",
-          "Kennzahl": "–",
-          "Wertung": "–",
-          "ranking": "– | –"
+          "Nation": "Belgien (BEL)",
+          "Wert1": "34",
+          "Wert2": "0,5",
+          "Wert3": "13",
+          "Kennzahl": "17,6%",
+          "Wertung": "",
+          "ranking": "34"
         },
         {
-          "Rang": "–",
-          "column_1": "–",
-          "Name": "–",
-          "Sätze": "–",
-          "Spiele": "–",
-          "Position": "–",
+          "Rang": "3.",
+          "column_1": "",
+          "Name": "Gesquiere, Amber",
+          "Sätze": "10",
+          "Spiele": "6",
+          "Position": "Mittelblock",
           "Mannschaft": "Borken",
-          "Nation": "–",
-          "Wert1": "–",
-          "Wert2": "–",
-          "Wert3": "–",
-          "Kennzahl": "–",
-          "Wertung": "–",
-          "ranking": "– | –"
+          "Nation": "Belgien (BEL)",
+          "Wert1": "34",
+          "Wert2": "0,5",
+          "Wert3": "13",
+          "Kennzahl": "17,6%",
+          "Wertung": "",
+          "ranking": "34"
         },
         {
           "Rang": "–",
@@ -371,7 +371,7 @@
       ],
       "opponent": [
         {
-          "Rang": "3.",
+          "Rang": "2.",
           "column_1": "",
           "Name": "Kirchhoff, Mia",
           "Sätze": "11",
@@ -387,7 +387,7 @@
           "ranking": "61"
         },
         {
-          "Rang": "3.",
+          "Rang": "2.",
           "column_1": "",
           "Name": "Kirchhoff, Mia",
           "Sätze": "11",
