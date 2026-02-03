@@ -1907,7 +1907,7 @@ TEAM_CANONICAL_NAMES: Mapping[str, str] = {
     normalize_name("SSC Palmberg Schwerin"): "SSC Palmberg Schwerin",
     normalize_name("Schwarz-Weiß Erfurt"): "Schwarz-Weiß Erfurt",
     normalize_name("Skurios Volleys Borken"): "Skurios Volleys Borken",
-    normalize_name("USC Münster"): USC_CANONICAL_NAME,
+    normalize_name("USC Münster"): "USC Münster",
     normalize_name("VC Wiesbaden"): "VC Wiesbaden",
     normalize_name("VfB Suhl LOTTO Thüringen"): "VfB Suhl LOTTO Thüringen",
 }
