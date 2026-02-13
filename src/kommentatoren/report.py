@@ -3089,6 +3089,7 @@ def find_next_usc_home_match(matches: Iterable[Match], *, reference: Optional[da
     now = reference or datetime.now(tz=BERLIN_TZ)
     future_home_games = [
         match
+        print("BRUD Host:",match.host)
         for match in matches
         if is_usc(match.host) and match.kickoff >= now
     ]
