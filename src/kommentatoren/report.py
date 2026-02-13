@@ -1483,6 +1483,7 @@ def slugify_team_name(value: str) -> str:
 
 def is_usc(name: str) -> bool:
     normalized = normalize_name(name)
+    print("BRUD name:",normalized)
     return "skurios" in normalized and "borken" in normalized
 
 
