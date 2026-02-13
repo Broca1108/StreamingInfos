@@ -4010,10 +4010,10 @@ def _format_season_results_section(
         f"          <li><a href=\"{escape(internal_link_url)}\">{escape(internal_link_label)}</a></li>"
     )
     link_items.append(
-        "          <li><a href=\"https://uscmuenster.github.io/scouting/index2.html\" rel=\"noopener\" target=\"_blank\">Scouting Skurios Volleys Borken</a></li>"
+        "          <li><a href=\"https://broca1108.github.io/scouting/index2.html\" rel=\"noopener\" target=\"_blank\">Scouting Skurios Volleys Borken</a></li>"
     )
     link_items.append(
-        "          <li><a href=\"https://github.com/uscmuenster/usc_streaminginfos\" rel=\"noopener\" target=\"_blank\">GitHub Projekt - Streaminginfos</a></li>"
+        "          <li><a href=\"https://broca1108.github.io/StreamingInfos\" rel=\"noopener\" target=\"_blank\">GitHub Projekt - Streaminginfos</a></li>"
     )
 
     if link_items:
