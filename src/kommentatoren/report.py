@@ -1285,7 +1285,11 @@ def parse_schedule(
         match_competition = (
             _normalize_competition_label(competition_field) or fallback_competition
         )
-
+        print("Home: ",home_team)
+        print("Away: ",away_team)
+        print("Host: ",host)
+        print("location: ",location)
+        
         matches.append(
             Match(
                 kickoff=kickoff,
