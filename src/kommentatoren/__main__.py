@@ -131,6 +131,12 @@ def main() -> int:
         url=args.schedule_url,
     )
     matches = load_schedule_from_file(args.schedule_path)
+    print("Now:", datetime.now(tz=BERLIN_TZ))
+    print("Teams (Sample):", sorted({m.home_team for m in matches})[:20])
+    print("Contains 'Skurios' in home:", [m.home_team for m in matches if "Skurios" in m.home_team][:10])
+    print("Upcoming home matches:",
+      [m for m in matches if m.kickoff > datetime.now(tz=BERLIN_TZ) and "Skurios" in m.home_team][:5])
+    
     try:
         schedule_metadata = fetch_schedule_match_metadata()
     except Exception as exc:  # pragma: no cover - network failure
