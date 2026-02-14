@@ -728,7 +728,7 @@ def build_lineup_dataset(
 ) -> Dict[str, object]:
     csv_text = fetch_schedule_csv(schedule_csv_url)
     schedule_rows = parse_schedule(csv_text)
-
+    print("BRUD: build lineup")
     recent_rows = find_recent_usc_matches(schedule_rows, limit=limit)
     if not recent_rows:
         raise RuntimeError("Keine abgeschlossenen USC-Spiele gefunden.")
