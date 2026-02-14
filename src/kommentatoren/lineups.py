@@ -196,6 +196,7 @@ def find_recent_matches_for_team(
 ) -> List[ScheduleRow]:
     if not team_name:
         return []
+    print("BRUD: In find_recent Schedule")
     target = _simplify(team_name)
     now = reference or datetime.now(tz=BERLIN_TZ)
     relevant = [
