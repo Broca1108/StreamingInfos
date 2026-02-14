@@ -213,6 +213,7 @@ def fetch_schedule_pdf_links(page_url: str = SCHEDULE_PAGE_URL) -> Dict[str, str
     response = requests.get(page_url, headers=REQUEST_HEADERS, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
+    print("BRUD: In fetch Schedule")
     links: Dict[str, str] = {}
     for anchor in soup.select("a[href]"):
         href = anchor["href"]
